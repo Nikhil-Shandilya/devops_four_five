@@ -15,3 +15,9 @@ docker rmi image-name:v1
 docker rm -f container-name
 docker rmi -f image-name:v1
 
+# first setup kubernetes
+kubectl config get-contexts
+kubectl apply -f deployment.yaml
+kubectl get deployments
+kubectl get pods -l app=<app name>
+kubectl logs <pod-name>

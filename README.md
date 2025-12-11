@@ -1,4 +1,8 @@
 open -a Docker
+systemctl --user start docker-desktop
+systemctl --user force-reload docker-desktop
+
+
 docker build -t image-name:v1 .
 docker run -d --name container-name -p 5007:5000 image-name:v1
 

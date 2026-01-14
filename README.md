@@ -1,4 +1,10 @@
+docker --version
+sudo apt update
+sudo apt install docker.io -y
+
 open -a Docker
+sudo systemctl start docker
+sudo systemctl enable docker
 systemctl --user start docker-desktop
 systemctl --user force-reload docker-desktop
 

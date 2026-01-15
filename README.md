@@ -60,3 +60,8 @@ kubectl delete svc student-portal-node-port
 kubectl scale deployment <deployment-name> --replicas=3
 kubectl get pods -l app=<app name>
 
+
+minikube delete
+minikube start --driver=docker --memory=4096 --cpus=2
+
+
